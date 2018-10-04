@@ -1,0 +1,24 @@
+{
+  "name": "poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "./node_modules/.bin/parcel build index.html"
+  },
+  "engines": {
+    "node": "8.12.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "express": "^4.16.3",
+    "parcel": "^1.10.1",
+    "qrcode-terminal": "^0.12.0",
+    "th": "^0.1.1",
+    "uport-connect": "^0.7.8",
+    "vue": "^2.5.13"
+  }
+}
