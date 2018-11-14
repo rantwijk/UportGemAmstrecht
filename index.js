@@ -26,13 +26,12 @@ new Vue({
         let app = this
         // Request credentials
         uport.requestCredentials({
-            requested: ['name', 'avatar', 'address', 'country', 'publicKey', 'publicEncKey', 'DoB'],
+            requested: ['name', 'avatar', 'address', 'publicKey', 'publicEncKey'],
             notifications: true
         }).then((credentials) => {
             app.user = credentials
-            //console.log(credentials);
-            receiver = credentials.did;
-            creds = credentials;
+            creds = app.user;
+            receiver = creds.did;
         }).then(() => {
           if(creds.avatar.uri!=null){
             document.getElementById("avatarImg").src=creds.avatar.uri;
