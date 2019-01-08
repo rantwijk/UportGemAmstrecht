@@ -29,7 +29,7 @@ new Vue({
             requested: ['name', 'avatar', 'address', 'publicKey', 'publicEncKey'],
             notifications: true
         }).then((credentials) => {
-            app.user = credentials
+            app.user = credentials;
             creds = app.user;
             receiver = creds.did;
         }).then(() => {
@@ -39,7 +39,7 @@ new Vue({
         })
       },
       logout: function() {
-        this.user = null
+        this.user = null;
       },
       setDoB: function() {
         let dobValue = document.getElementById("dob").value;
